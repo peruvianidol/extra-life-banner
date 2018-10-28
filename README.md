@@ -2,6 +2,8 @@
 
 Track progress towards you or your team's Extra Life goal and display last three donors. For use as an overlay with OBS or other streaming clients.
 
+All of the required images (SVG), CSS and JS are embedded in the HTML file.
+
 ##  Usage
 
 * Clone or download index.html to your local computer.
