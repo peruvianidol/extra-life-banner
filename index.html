@@ -157,7 +157,7 @@
       </svg>
       <div class="el-donate">
         <h2>Donate</h2>
-        <p class="el-donate-url">extra-life.org/team/olivia</p>
+        <p class="el-donate-url" id="el-donate-url"></p>
       </div>
       <div class="el-goal">
         <h3>Goal <span class="el-goal-amt" id="el-goal-amt"></span></h3>
@@ -183,9 +183,11 @@
     <script>
       // Data will default to a single participant. If you want to track team
       // dontations, delete the participantID const.
+      // Change donationURL to your URL.
 
       const participantID = 304352; // replace with your participantID
       const teamID = 39662; // replace with your teamID
+      const donationURL = "https://extra-life.org/participant/peruvianidol";
 
       if (typeof participantID !== 'undefined') {
         var meterURL = "https://extra-life.org/api/participants/" + participantID;
@@ -194,6 +196,8 @@
         var meterURL = "https://extra-life.org/api/teams/" + teamID;
         var donorURL = "https://extra-life.org/api/teams/" + teamID + "/donations";
       }
+
+      document.getElementById("el-donate-url").innerHTML = donationURL;
 
       setInterval(function() {
         var xmlhttp = new XMLHttpRequest();
