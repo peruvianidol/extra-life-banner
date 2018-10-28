@@ -1,6 +1,6 @@
-# extra-life-banner
+# Extra Life Banner
 
-Track progress towards your team's Extra Life goal and display last three donors.
+Track progress towards your team's Extra Life goal and display last three donors. For use as an overlay with OBS or other streaming clients.
 
 ##  Usage
 
