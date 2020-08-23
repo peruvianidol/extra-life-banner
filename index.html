@@ -187,15 +187,15 @@
 
       const participantID = 304352; // replace with your participantID
       const teamID = 39662; // replace with your teamID
-      const donationURL = "https://extra-life.org/participant/peruvianidol";
+      const donationURL = "https://www.extra-life.org/participant/peruvianidol";
       const socialName = "peruvianidol";
 
       if (typeof participantID !== 'undefined') {
-        var meterURL = "https://extra-life.org/api/participants/" + participantID;
-        var donorURL = "https://extra-life.org/api/participants/" + participantID + "/donations";
+        var meterURL = "https://www.extra-life.org/api/participants/" + participantID;
+        var donorURL = "https://www.extra-life.org/api/participants/" + participantID + "/donations";
       } else {
-        var meterURL = "https://extra-life.org/api/teams/" + teamID;
-        var donorURL = "https://extra-life.org/api/teams/" + teamID + "/donations";
+        var meterURL = "https://www.extra-life.org/api/teams/" + teamID;
+        var donorURL = "https://www.extra-life.org/api/teams/" + teamID + "/donations";
       }
 
       document.getElementById("el-donate-url").innerHTML = donationURL;
